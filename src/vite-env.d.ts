@@ -26,6 +26,8 @@ interface ImportMetaEnv {
     
     // 标题
    readonly VITE_APP_TITLE:string;
+   //自定义前缀APP_
+   readonly APP_NAME:string;
 
 }
 declare global {

@@ -9,12 +9,19 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@element-plus/icons-vue": "^2.1.0",
+    "element-plus": "^2.2.36",
     "vue": "^3.2.45"
   },
   "devDependencies": {
+    "@iconify-json/ep": "^1.1.10",
+    "@iconify-json/mdi": "^1.1.49",
     "@vitejs/plugin-vue": "^4.0.0",
     "terser": "^5.16.5",
     "typescript": "^4.9.3",
+    "unplugin-auto-import": "^0.15.1",
+    "unplugin-icons": "^0.15.3",
+    "unplugin-vue-components": "^0.24.1",
     "vite": "^4.1.0",
     "vue-tsc": "^1.0.24"
   }
