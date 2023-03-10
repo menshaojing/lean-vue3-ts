@@ -17,5 +17,7 @@ declare module '@vue/runtime-core' {
     IEpAvatar: typeof import('~icons/ep/avatar')['default']
     IMdiAccountBox: typeof import('~icons/mdi/account-box')['default']
     IMyIncnsStar: typeof import('~icons/my-incns/star')['default']
+    RouterLink: typeof import('vue-router')['RouterLink']
+    RouterView: typeof import('vue-router')['RouterView']
   }
 }
