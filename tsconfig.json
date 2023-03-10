@@ -13,6 +13,11 @@
     "skipLibCheck": true,
     "noEmit": true,
     "types": ["vite/client"],
+    //添加 baseUrl 、paths属性alias简化才会提示
+    "baseUrl": "./",
+    "paths": {
+      "@/*": ["./src/*"]     //格式一定要写对符号*不能少不然找不到@或者没有代码提示
+    }
   },
   "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"],
   "exclude": ["dist", "node_modules"]

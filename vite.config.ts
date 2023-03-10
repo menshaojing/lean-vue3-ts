@@ -5,6 +5,7 @@ import Components from 'unplugin-vue-components/vite'
 import { ElementPlusResolver } from 'unplugin-vue-components/resolvers'
 import Icons from 'unplugin-icons/vite'
 import IconsResolver from 'unplugin-icons/resolver'
+import path from 'path'
 //获取当前程序根路径
 const root=process.cwd();
 // https://vitejs.dev/config/
@@ -22,6 +23,12 @@ const userConfig= (configEnv:ConfigEnv):UserConfig=>{
     env=loadEnv(mode,root);
   }
   return{
+    resolve:{
+      //alias简化,修改tsconfig.json （不修改没有提示）
+      alias: {
+        '@': path.resolve(__dirname, './src'),
+      }
+    },
     //vite中默认的自定义变量前缀为VITE_，如果你想不使用默认的前缀，可以在envPrefix中添加自定义前缀，例如我们添加了APP_前缀
     envPrefix:["VITE_","APP_"],
     base:env.VITE_BASE_PATH,

@@ -13,7 +13,7 @@ import {createRouter,createWebHashHistory, RouteRecordRaw} from "vue-router";
     //访问路径
     path:"/home",
     //组件 implicitly has an 'any' type.
-    component:()=>import("../views/home.vue"),
+    component:()=>import("@/views/home.vue"),
     //名称
     name:"home"
    },
@@ -21,7 +21,7 @@ import {createRouter,createWebHashHistory, RouteRecordRaw} from "vue-router";
     //访问路径
     path:"/login",
     //组件
-    component:()=>import("../views/login.vue"),
+    component:()=>import("@/views/login.vue"),
      //名称
     name:"login"
    },
@@ -29,7 +29,7 @@ import {createRouter,createWebHashHistory, RouteRecordRaw} from "vue-router";
     //访问路径
     path:"/helloWorld",
     //组件
-    component:()=>import("../views/HelloWorld.vue"),
+    component:()=>import("@/views/HelloWorld.vue"),
     //名称
     name:"HelloWorld"
    }
