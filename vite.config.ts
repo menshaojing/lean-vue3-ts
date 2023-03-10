@@ -33,15 +33,27 @@ const userConfig= (configEnv:ConfigEnv):UserConfig=>{
       resolvers: [ElementPlusResolver(),
         // 自动导入图标组件
       IconsResolver()],
+      //指定auto-imports.d.ts生成路径
+      dts:"src/types/auto-imports.d.ts"
     }),
       Components({
       resolvers: [ElementPlusResolver(),
         // 自动注册图标组件,默认是开启所有的图标，图标集合在这个网站 https://iconify.design/icon-sets/.
-      IconsResolver()],
+        //添加自定义图标collectionid,我们命名为my-incns，添加customCollections参数，将我们自定义集合放进去
+      IconsResolver({customCollections:["my-incns"]})],
+      //指定components.d.ts生成路径
+      dts: 'src/types/components.d.ts',
     }),
     //自动安装图标
     Icons({
-      autoInstall: true
+      autoInstall: true,
+      //添加自定义集合，"my-incns"是collection集合id，star是图片名称，star的值为svg代码
+      customCollections:{
+        "my-incns":{
+        star:'<svg  width="24" height="24" viewBox="0 0 1024 1024" >'+
+        '<path fill="currentColor" d="M628.736 528.896A416 416 0 0 1 928 928H96a415.872 415.872 0 0 1 299.264-399.104L512 704l116.736-175.104zM720 304a208 208 0 1 1-416 0a208 208 0 0 1 416 0z"/></svg>'
+      },
+    }
     })],
     build:{
       //terser -> 需要安装该插件 pnpm i terser -D

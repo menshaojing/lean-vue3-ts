@@ -36,13 +36,26 @@ const count = ref(0)
     <p>
       图标演示
   </p>
-    <el-icon :size="20">
+     
+    <el-col :span="12" :offset="0">
+
+  <el-icon :size="20">
       <i-mdi-account-box style="font-size: 2em; color: red"/>
   </el-icon>
   <el-icon :size="20">
     <i-ep-avatar style="font-size: 2em; color: red"/>
   </el-icon>
-  avatar
+    </el-col>
+
+    <el-col :span="24" :offset="0">
+      自定义图标
+    <el-icon :size="20">
+    <i-my-incns-star style="font-size: 2em; color: red"/>
+  </el-icon>
+    </el-col>
+   
+
+  
   </el-row>
 </template>
 

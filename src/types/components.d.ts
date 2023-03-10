@@ -10,14 +10,12 @@ export {}
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
     ElButton: typeof import('element-plus/es')['ElButton']
-    ElContainer: typeof import('element-plus/es')['ElContainer']
-    ElFooter: typeof import('element-plus/es')['ElFooter']
-    ElHeader: typeof import('element-plus/es')['ElHeader']
+    ElCol: typeof import('element-plus/es')['ElCol']
     ElIcon: typeof import('element-plus/es')['ElIcon']
-    ElMain: typeof import('element-plus/es')['ElMain']
     ElRow: typeof import('element-plus/es')['ElRow']
-    HelloWorld: typeof import('./src/components/HelloWorld.vue')['default']
+    HelloWorld: typeof import('./../components/HelloWorld.vue')['default']
     IEpAvatar: typeof import('~icons/ep/avatar')['default']
     IMdiAccountBox: typeof import('~icons/mdi/account-box')['default']
+    IMyIncnsStar: typeof import('~icons/my-incns/star')['default']
   }
 }
