@@ -13,7 +13,7 @@ declare module '@vue/runtime-core' {
     ElCol: typeof import('element-plus/es')['ElCol']
     ElIcon: typeof import('element-plus/es')['ElIcon']
     ElRow: typeof import('element-plus/es')['ElRow']
-    HelloWorld: typeof import('./../components/HelloWorld.vue')['default']
+    HelloWorld: typeof import('../views/HelloWorld.vue')['default']
     IEpAvatar: typeof import('~icons/ep/avatar')['default']
     IMdiAccountBox: typeof import('~icons/mdi/account-box')['default']
     IMyIncnsStar: typeof import('~icons/my-incns/star')['default']
