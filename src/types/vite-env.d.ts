@@ -35,3 +35,8 @@ declare global {
       readonly env: ImportMetaEnv
     }
   }
+// Cannot find module '@/ views / HelloWorld . vue ' or its corresponding type declarations .
+declare module '*. vue '{ import { DefineComponent } from " vue "
+ const component : DefineComponent <{},{}, any >
+ export default component 
+｝
